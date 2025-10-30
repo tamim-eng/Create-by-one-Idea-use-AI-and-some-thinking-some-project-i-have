@@ -1,0 +1,394 @@
+<!doctype html>
+<!--
+  Cake & Crumbs — Single-file HTML + CSS bakery website
+  - Fully responsive
+  - Pure HTML + CSS (small accessible form, no JS required)
+  - Sections: Hero, About, Menu, Gallery, Order, Contact, Footer
+  - Replace placeholder images (unsplash) with your own photos when ready
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cake & Crumbs — Bakery & Pastry</title>
+  <meta name="description" content="Cake & Crumbs — Handmade cakes, pastries, and desserts. Order online or visit our bakery." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<!-- HTML -->
+<div class="marquee">
+  <p>🎂 Welcome to Tasty Pastry Cake — Freshly Baked Happiness Every Day! 🍰 Hotline : +880 1705-296706</p>
+</div>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <div class="nav-inner">
+          <div class="brand">
+            <div class="logo">
+              <img src="logo.jpg" alt="Bakery logo" />
+            </div>
+            <div>
+              <h1>Tasty Pastry & Cake </h1>
+              <p>Handmade Cakes & Pastries • Since 2025</p>
+            </div>
+          </div>
+
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#order">Order</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <a class="btn" href="#order">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-grid container">
+        <div class="fade-up">
+          <span class="badge">Fresh daily • Custom cakes</span>
+          <h2>Delicious Cakes & Pastries made with love</h2>
+          <p>From celebration cakes to bite-sized pastries — we bake everything from scratch using quality ingredients. Delivery and pickup available.</p>
+          <p>
+            <a class="btn" href="#menu">View Menu</a>
+            <a class="btn ghost" href="#contact" style="margin-left:12px">Visit Us</a>
+          </p>
+
+          <div style="margin-top:18px">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="display:flex;gap:10px;align-items:center">
+                <img src="cup.webp" alt="cupcake" style="width:100px;height:100px;border-radius:10px;object-fit:cover;box-shadow:0 8px 22px rgba(216,90,122,0.08)" />
+                <div>
+                  <strong>Daily Bakes</strong>
+                  <div style="color:var(--muted);font-size:13px">Fresh breads & pastries every morning</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card fade-up fade-delay-1 center">
+          <div style="width:100%">
+            <h4 style="margin:0 0 8px">Quick Picks</h4>
+            <div class="product-preview">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="chocolate cake" />
+              <img src="https://images.unsplash.com/photo-1543779505-7f9897c06d0c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="macarons" />
+            </div>
+            <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+              <div style="font-weight:700">Chocolate Fudge</div>
+              <div class="price">৳ 850</div>
+            </div>
+            <div style="margin-top:8px;color:var(--muted);font-size:13px">Order for same-day pickup (call to confirm availability)</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about container">
+      <div>
+        <div class="section-title">
+          <h3>About Cake & Crumbs</h3>
+          <p>Small-batch bakery focusing on custom cakes, pastries and celebration desserts.</p>
+        </div>
+
+        <p style="color:var(--muted);margin-bottom:14px">We are a local bakery passionate about flavor and presentation. We make everything by hand — from sponge to fillings — and customize cakes for birthdays, weddings, and cultural celebrations. Our ingredients are chosen for taste and freshness.</p>
+
+        <ul style="color:var(--muted);margin:0 0 18px">
+          <li>Custom design consultations</li>
+          <li>Pickup and local delivery</li>
+          <li>Special dietary options on request (eggless, less-sugar)</li>
+        </ul>
+
+        <p>
+          <a class="btn" href="#order">Start an Order</a>
+        </p>
+      </div>
+
+      <div class="hero-img">
+        <img src="hand.webp" alt="bakery" />
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="container">
+      <div class="section-title">
+        <h3>Our Menu</h3>
+        <p>Explore popular cakes, pastries and desserts.</p>
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- Item 1 -->
+        <article class="item fade-up">
+          <div class="thumb"><img src="valilla.webp" alt="vanilla cake" /></div>
+          <h4>Vanilla Celebration Cake</h4>
+          <div class="tags"><span class="tag">8" - ৳1200</span><span class="tag">Custom Frosting</span></div>
+          <p style="color:var(--muted);margin:6px 0 0">Light sponge, fresh cream, seasonal fruits on top.</p>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">৳1,200</div>
+            <a class="btn" href="#order">Order</a>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="item fade-up fade-delay-1">
+          <div class="thumb"><img src="choklet.webp" alt="chocolate" /></div>
+          <h4>Chocolate Fudge Cake</h4>
+          <div class="tags"><span class="tag">6" - ৳850</span><span class="tag">Rich & Moist</span></div>
+          <p style="color:var(--muted);margin:6px 0 0">Dark cocoa layers with silky fudge frosting.</p>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">৳850</div>
+            <a class="btn" href="#order">Order</a>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="item fade-up fade-delay-2">
+          <div class="thumb"><img src="aso.webp" alt="macarons" /></div>
+          <h4>Assorted Macarons (Box of 12)</h4>
+          <div class="tags"><span class="tag">Box - ৳650</span><span class="tag">Seasonal Flavors</span></div>
+          <p style="color:var(--muted);margin:6px 0 0">Crisp shells with buttery ganache and jams.</p>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">৳650</div>
+            <a class="btn" href="#order">Order</a>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="item fade-up">
+          <div class="thumb"><img src="cup.webp" alt="cupcakes" /></div>
+          <h4>Signature Cupcakes (Set of 6)</h4>
+          <div class="tags"><span class="tag">Set - ৳420</span><span class="tag">Custom Toppers</span></div>
+          <p style="color:var(--muted);margin:6px 0 0">Moist cupcakes with piped buttercream decorations.</p>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">৳420</div>
+            <a class="btn" href="#order">Order</a>
+          </div>
+        </article>
+        <!-- Chocolate Fudge Cake -->
+<article class="item fade-up fade-delay-1">
+  <div class="thumb"><img src="choklet.webp" alt="Chocolate Fudge Cake" /></div>
+  <h4> RAW Chocolate  Cake</h4>
+  <div class="tags"><span class="tag">6" - ৳1250</span><span class="tag">Rich & Moist</span></div>
+  <p style="color:var(--muted);margin:6px 0 0">Dark cocoa layers with silky fudge frosting.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+    <div class="price">৳1250</div>
+    <a class="btn" href="#order">Order</a>
+  </div>
+</article>
+
+<!-- Mango Delight Cake -->
+<article class="item fade-up fade-delay-2">
+  <div class="thumb"><img src="mango.webp" alt="Mango Delight Cake" /></div>
+  <h4>Mango Delight Cake</h4>
+  <div class="tags"><span class="tag">6" - ৳950</span><span class="tag">Fresh & Fruity</span></div>
+  <p style="color:var(--muted);margin:6px 0 0">Soft vanilla sponge with real mango puree and cream.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+    <div class="price">৳950</div>
+    <a class="btn" href="#order">Order</a>
+  </div>
+</article>
+
+<!-- Butterscotch Bliss Cake -->
+<article class="item fade-up fade-delay-2">
+  <div class="thumb"><img src="butter.webp" alt="Butterscotch Bliss Cake" /></div>
+  <h4>Butterscotch Bliss Cake</h4>
+  <div class="tags"><span class="tag">6" - ৳820</span><span class="tag">Caramel Crunch</span></div>
+  <p style="color:var(--muted);margin:6px 0 0">Creamy butterscotch cream layered with caramel crunch.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+    <div class="price">৳820</div>
+    <a class="btn" href="#order">Order</a>
+  </div>
+</article>
+
+<!-- Strawberry Dream Cake -->
+<article class="item fade-up fade-delay-2">
+  <div class="thumb"><img src="stru.webp" alt="Strawberry Dream Cake" /></div>
+  <h4>Strawberry Dream Cake</h4>
+  <div class="tags"><span class="tag">6" - ৳880</span><span class="tag">Fresh Cream</span></div>
+  <p style="color:var(--muted);margin:6px 0 0">Layers of soft sponge with strawberry cream and glaze.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+    <div class="price">৳880</div>
+    <a class="btn" href="#order">Order</a>
+  </div>
+</article>
+
+<!-- Rasmalai Cake -->
+<article class="item fade-up fade-delay-2">
+  <div class="thumb"><img src="ros.webp" alt="Rasmalai Cake" /></div>
+  <h4>Rasmalai Fusion Cake</h4>
+  <div class="tags"><span class="tag">6" - ৳900</span><span class="tag">Desi Fusion</span></div>
+  <p style="color:var(--muted);margin:6px 0 0">Milky saffron layers infused with rasmalai flavor.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+    <div class="price">৳900</div>
+    <a class="btn" href="#order">Order</a>
+  </div>
+</article>
+
+<!-- Orange Zest Cake -->
+<article class="item fade-up fade-delay-2">
+  <div class="thumb"><img src="or.webp" alt="Orange Zest Cake" /></div>
+  <h4>Orange Zest Cake</h4>
+  <div class="tags"><span class="tag">6" - ৳870</span><span class="tag">Citrus Fresh</span></div>
+  <p style="color:var(--muted);margin:6px 0 0">Zesty orange cream and vanilla sponge — bright & fresh.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+    <div class="price">৳870</div>
+    <a class="btn" href="#order">Order</a>
+  </div>
+</article>
+
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="container">
+      <div class="section-title">
+        <h3>Gallery</h3>
+        <p>Some of our recent work.</p>
+      </div>
+
+      <div class="gallery">
+        <img src="g1.jpg" alt="cake 1" />
+        <img src="g2.jpg" alt="cake 2" width="200px"/>
+        <img src="g3.jpg" alt="cake 3" width="200px" />
+        <img src="g4.jpg" alt="cake 4" width="200px"/>
+        <img src="g5.webp" alt="cake 3" width="200px" />
+        <img src="g6.webp" alt="cake 4" width="200px"/>
+        <img src="g7.webp" alt="cake 3" width="200px" />
+        <img src="g8.webp" alt="cake 4" width="200px"/>
+
+   
+      </div>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section id="order" class="container">
+      <div class="section-title">
+        <h3>Start Your Order</h3>
+        <p>Tell us the details and we'll contact you to confirm.</p>
+      </div>
+
+      <form action="#" method="post" onsubmit="alert('This demo form does not send data. Integrate with backend or email service.');return false;">
+        <div class="grid-2">
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="01XXXXXXXXX" required />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@mail.com" />
+          </div>
+          <div>
+            <label for="type">Product</label>
+            <select id="type" name="type">
+              <option>Vanilla Celebration Cake (8")</option>
+              <option>Chocolate Fudge Cake (6")</option>
+              <option>Macaron Box (12)</option>
+              <option>Cupcake Set (6)</option>
+              <option>Custom Order</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="date">Preferred date</label>
+          <input id="date" name="date" type="text" placeholder="YYYY-MM-DD or asap" />
+        </div>
+
+        <div>
+          <label for="notes">Notes (message, theme, allergies, pickup/delivery)</label>
+          <textarea id="notes" name="notes" placeholder="Eg: 20-person, pastel theme, eggless"></textarea>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:center">
+          <button class="btn" type="submit">Send Order Request</button>
+          <div style="color:var(--muted);font-size:13px">We will reply within 24 hours. For urgent same-day orders, please call.</div>
+        </div>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <div class="section-title">
+        <h3>Contact & Visit</h3>
+        <p>Come by or reach out — we'd love to hear from you.</p>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;min-width:260px">
+          <div style="background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)">
+            <h4 style="margin-top:0">Rima,s Bakery</h4>
+            <p style="margin:6px 0;color:var(--muted)">Gopalganj, Bangladesh</p>
+            <p style="margin:6px 0;color:var(--muted)">Phone (W): +880 1705-296706</p>
+            <p style="margin:6px 0;color:var(--muted)">Everyday: Open 8:00 AM–8:00 PM </p>
+
+            <div style="margin-top:12px">
+              <a class="btn" href="#">Get Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="flex:1;min-width:260px">
+          <div style="background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)">
+            <h4 style="margin-top:0">Message us</h4>
+            <form action="#" onsubmit="alert('Demo: replace with real backend.');return false;">
+              <label for="cname">Name</label>
+              <input id="cname" name="cname" type="text" />
+              <label for="cmsg">Message</label>
+              <textarea id="cmsg" name="cmsg"></textarea>
+              <div style="margin-top:8px"><button class="btn" type="submit">Send</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          <strong>Cake & Crumbs</strong>
+          <div style="color:var(--muted)">Handmade cakes & pastries • Gopalganj</div>
+          <p>contact Tamim Ahamed</p>
+        </div>
+
+        <div class="social">
+          <a href="https://www.facebook.com/tasty.pastry.cake.2025" aria-label="facebook">FB</a>
+          
+          <a href="+880 1705-296706" aria-label="phone" aria-placeholder="phone">Call</a>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">© <span id="year">2025</span> Cake & Crumbs. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small enhancement: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
